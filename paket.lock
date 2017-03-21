@@ -1,0 +1,14 @@
+
+GITHUB
+  remote: fsprojects/FSharpx.Collections
+    src/FSharpx.Collections/Collections.fs (e2722ce571f4926586ae907413b4a5511f0ef74e)
+    src/FSharpx.Collections/LazyList.fs (e2722ce571f4926586ae907413b4a5511f0ef74e)
+    src/FSharpx.Collections/LazyList.fsi (e2722ce571f4926586ae907413b4a5511f0ef74e)
+  remote: hedgehogqa/dotnet-hedgehog
+    Hedgehog/Gen.fs (3fbccc53af10a497ff6bde4a846924dc937b4631)
+    Hedgehog/Numeric.fs (3fbccc53af10a497ff6bde4a846924dc937b4631)
+    Hedgehog/Property.fs (3fbccc53af10a497ff6bde4a846924dc937b4631)
+    Hedgehog/Random.fs (3fbccc53af10a497ff6bde4a846924dc937b4631)
+    Hedgehog/Seed.fs (3fbccc53af10a497ff6bde4a846924dc937b4631)
+    Hedgehog/Shrink.fs (3fbccc53af10a497ff6bde4a846924dc937b4631)
+    Hedgehog/Tree.fs (3fbccc53af10a497ff6bde4a846924dc937b4631)
