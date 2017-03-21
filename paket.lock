@@ -12,3 +12,5 @@ GITHUB
     Hedgehog/Seed.fs (3fbccc53af10a497ff6bde4a846924dc937b4631)
     Hedgehog/Shrink.fs (3fbccc53af10a497ff6bde4a846924dc937b4631)
     Hedgehog/Tree.fs (3fbccc53af10a497ff6bde4a846924dc937b4631)
+  remote: ploeh/dependency-rejection-samples
+    FSharp/BookingApi/MaîtreD.fs (f21b5d12181ee2f6a4bce51ffa39f084b7d0966c)
