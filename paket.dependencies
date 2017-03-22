@@ -11,3 +11,4 @@ github hedgehogqa/dotnet-hedgehog Hedgehog/Gen.fs
 github hedgehogqa/dotnet-hedgehog Hedgehog/Property.fs
 
 github ploeh/dependency-rejection-samples FSharp/BookingApi/MaîtreD.fs
+github ploeh/KataTennis KataTennis/Tennis.fs
