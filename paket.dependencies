@@ -1,14 +1,6 @@
-github fsprojects/FSharpx.Collections:e2722ce571f4926586ae907413b4a5511f0ef74e src/FSharpx.Collections/Collections.fs
-github fsprojects/FSharpx.Collections:e2722ce571f4926586ae907413b4a5511f0ef74e src/FSharpx.Collections/LazyList.fsi
-github fsprojects/FSharpx.Collections:e2722ce571f4926586ae907413b4a5511f0ef74e src/FSharpx.Collections/LazyList.fs
+source https://nuget.org/api/v2
 
-github hedgehogqa/dotnet-hedgehog Hedgehog/Numeric.fs
-github hedgehogqa/dotnet-hedgehog Hedgehog/Seed.fs
-github hedgehogqa/dotnet-hedgehog Hedgehog/Tree.fs
-github hedgehogqa/dotnet-hedgehog Hedgehog/Random.fs
-github hedgehogqa/dotnet-hedgehog Hedgehog/Shrink.fs
-github hedgehogqa/dotnet-hedgehog Hedgehog/Gen.fs
-github hedgehogqa/dotnet-hedgehog Hedgehog/Property.fs
+nuget Hedgehog
 
 github ploeh/dependency-rejection-samples FSharp/BookingApi/MaîtreD.fs
 github ploeh/KataTennis KataTennis/Tennis.fs
