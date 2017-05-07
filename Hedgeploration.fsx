@@ -13,7 +13,7 @@ module Gen =
     let reservation =
         gen {
             let! bookingDate = Gen.dateTime |> Gen.map DateTimeOffset
-            let! positiveQty = Gen.integral <| Range.linear 1 99
+            let! positiveQty = Gen.int (Range.linear 1 100)
             let! trueOrFalse = Gen.bool
 
             return { Date = bookingDate
@@ -38,8 +38,8 @@ module Gen =
 let ``tryAccept behaves correctly when it can accept`` =
     property {
         let! reservation    = Gen.reservation
-        let! reservations   = Gen.list (Range.constant 0 100) Gen.reservation
-        let! excessCapacity = Gen.filter (fun x -> x >= 0) (Gen.int <| Range.constantBounded ())
+        let! reservations   = Gen.list (Range.linear 0 100) Gen.reservation
+        let! excessCapacity = Gen.int  (Range.linear 0 100)
         let  capacity       = excessCapacity
                               + (reservations |> List.sumBy (fun x -> x.Quantity))
                               + reservation.Quantity
@@ -52,8 +52,8 @@ let ``tryAccept behaves correctly when it can accept`` =
 let ``tryAccept behaves correctly when it can't accept`` =
     property {
         let! reservation     = Gen.reservation
-        let! reservations    = Gen.list (Range.constant 0 100) Gen.reservation
-        let! lackingCapacity = Gen.filter (fun x -> x > 0) (Gen.int <| Range.constantBounded ())
+        let! reservations    = Gen.list (Range.linear 0 100) Gen.reservation
+        let! lackingCapacity = Gen.int  (Range.linear 1 100)
         let  capacity        = (reservations |> List.sumBy (fun x -> x.Quantity))
                                - lackingCapacity
 
